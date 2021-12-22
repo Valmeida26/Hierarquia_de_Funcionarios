@@ -6,7 +6,6 @@ class Programas :
         self._likes = 0
 
 
-    # O @property faz o valor de likes que esta imutavel poder retornar na tela
     @property
     def likes(self):
         return self._likes
@@ -14,17 +13,14 @@ class Programas :
     def dar_likes(self):
         self._likes += 1
 
-    # O @property faz o valor de nome que esta imutavel poder retornar na tela
     @property
     def nome(self):
         return self._nome
-    # O @nome.setter é usado para podermos alterar um valor que está com '__' e deveria ser imutavel
-    # @valor.setter>def valornovo(self,atributo): > return self.__valorimutavel == valornovo
+    
     @nome.setter
     def nome_novo(self, novo_nome):
         return self._nome == novo_nome.title()
 
-    #Este __str__ faz a função do print
     def __str__(self):
         return f"{self._nome} - {self.ano} - {self._likes}Likes"
 
@@ -51,7 +47,7 @@ class Serie(Programas):
     def __str__(self):
         return f"{self._nome} - {self.ano} - {self.temporadas} temporadas - {self._likes} Likes"
 
-#classe playlist com herança de list
+
 '''class playlist(list):
     def __init__(self, nome, assistir):
         self.nome = nome
