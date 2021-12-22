@@ -1,4 +1,5 @@
-#Hierarquia de funcionarios
+#Hierarquia de funcionarios: um programa que printa a função dos funcionarios de uma empresa
+#conforme seu cargo e registra a hora e data em que ele foi rodado.
 
 from datetime import datetime
 
