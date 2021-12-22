@@ -1,3 +1,6 @@
+#Este programa printa o nome, quantas temporadas ou duração tem e o ano de lançamento do filme ou serie
+#traz tambem uma lista com os filmes e serie e se a serie demolidor está entre elas.
+
 #classe mãe
 class Programas :
     def __init__(self, nome, ano):
@@ -30,8 +33,6 @@ class Programas :
 #classe filho filme
 class Filme(Programas):
     def __init__(self, nome, ano, duracao):
-            #super chama a classe mãe e com o iniciador e os atributos deixando assim a inclusão desses atributos nome,
-            #ano de forma automática, assim quando crio novas subclasses não preciso repetir o código
             super().__init__(nome,ano)
             self.duracao = duracao
 
